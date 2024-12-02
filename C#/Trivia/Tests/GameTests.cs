@@ -30,6 +30,16 @@ public class GameTests
     }
 
     [Fact]
+    public void When_OnePlayerAdded_IsPlayeble_ReturnsFalse()
+    {
+        var sut = CreateSut();
+        sut.Add("Chet");
+
+        var result = sut.IsPlayable();
+        Assert.False(result);
+    }
+
+    [Fact]
     public void When_TwoPlayersAdded_IsPlayable_Should_ReturnTrue()
     {
         var sut = CreateSut();
