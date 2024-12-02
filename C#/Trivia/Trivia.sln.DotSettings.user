@@ -2,5 +2,9 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=67911456_002Dc7fb_002D49d3_002Da914_002D63fd8580b4f6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="When_PlayerIsAdded_Console_Message_Should_Appear" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.ApprovalTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.AddPlayersApproval&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.AddTwoPlayersApproval&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.AddSevenPlayersApproval&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.RollApproval&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

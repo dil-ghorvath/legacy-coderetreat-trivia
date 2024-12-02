@@ -1,0 +1,7 @@
+﻿Chet was added
+They are player number 1
+Chet is the current player
+They have rolled a 1
+Chet's new location is 1
+The category is Science
+Science Question 0
