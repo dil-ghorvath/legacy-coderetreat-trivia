@@ -130,6 +130,18 @@ public class GameTests
         Assert.Contains("Chet was sent to the penalty box", output.ToString());
     }
 
+    [Fact]
+    public void When_PlayerAnswerFirstQuestionRight_ShouldGetOneCoin()
+    {
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+        sut.Add("Chet");
+
+        sut.WasCorrectlyAnswered();
+        Assert.Contains("Chet now has 1 Gold Coins.", output.ToString());
+    }
+
     public Game CreateSut()
     {
         return new Game();
