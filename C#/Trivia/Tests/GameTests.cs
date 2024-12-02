@@ -28,6 +28,15 @@ public class GameTests
         Assert.False(result);
     }
 
+    [Fact]
+    public void When_TwoPlayersAdded_IsPlayable_Should_ReturnTrue()
+    {
+        var sut = CreateSut();
+        sut.Add("Chet");
+        sut.Add("Pat");
+        Assert.True(sut.IsPlayable());
+    }
+
     public Game CreateSut()
     {
         return new Game();
