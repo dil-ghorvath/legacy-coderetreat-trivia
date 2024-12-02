@@ -44,6 +44,11 @@ namespace Trivia
 
         public bool Add(string playerName)
         {
+            if (playerName is null || playerName == string.Empty)
+            {
+                throw new ArgumentNullException(nameof(playerName), "Please add a name for the player.");
+            }
+
             _players.Add(playerName);
             _places[HowManyPlayers()] = 0;
             _purses[HowManyPlayers()] = 0;
