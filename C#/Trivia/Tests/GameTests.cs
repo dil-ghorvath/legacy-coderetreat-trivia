@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.IO;
 using Trivia;
 using Xunit;
@@ -77,6 +78,19 @@ public class GameTests
         Assert.Contains("Chet's new location is 5", output.ToString());
     }
 
+    [Fact]
+    public void When_PlayerRollsEven_AndIsInPenaltyBox_ShouldNotMovePlaces()
+    {
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+        sut.Add("Chet");
+        sut.WrongAnswer();
+
+        sut.Roll(2);
+
+        Assert.Contains("Chet is not getting out of the penalty box", output.ToString());
+    }
 
     public Game CreateSut()
     {
