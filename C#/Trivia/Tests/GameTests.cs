@@ -92,6 +92,21 @@ public class GameTests
         Assert.Contains("Chet is not getting out of the penalty box", output.ToString());
     }
 
+    [Fact]
+    public void When_PlayerRollsOdd_AndIsInPenaltyBox_AndAnwsersCorrect_ShouldMovePlaces()
+    {
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+        sut.Add("Chet");
+        sut.WrongAnswer();
+
+        sut.Roll(3);
+        sut.WasCorrectlyAnswered();
+
+        Assert.Contains("Chet's new location is 3", output.ToString());
+    }
+
     public Game CreateSut()
     {
         return new Game();
