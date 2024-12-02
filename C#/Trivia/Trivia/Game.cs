@@ -8,10 +8,10 @@ namespace Trivia
     {
         private readonly List<string> _players = new List<string>();
 
-        private readonly int[] _places = new int[6];
-        private readonly int[] _purses = new int[6];
+        private readonly int[] _places = new int[10];
+        private readonly int[] _purses = new int[10];
 
-        private readonly bool[] _inPenaltyBox = new bool[6];
+        private readonly bool[] _inPenaltyBox = new bool[10];
 
         private readonly LinkedList<string> _popQuestions = new LinkedList<string>();
         private readonly LinkedList<string> _scienceQuestions = new LinkedList<string>();
@@ -61,6 +61,10 @@ namespace Trivia
 
         public void Roll(int roll)
         {
+            if (!IsPlayable())
+            {
+                throw new Exception("Please add at least 2 players before starting!");
+            }
             Console.WriteLine(_players[_currentPlayer] + " is the current player");
             Console.WriteLine("They have rolled a " + roll);
 
