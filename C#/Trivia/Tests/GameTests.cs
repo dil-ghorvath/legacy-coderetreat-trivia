@@ -20,6 +20,14 @@ public class GameTests
         Assert.Contains("Chet was added", output.ToString());
     }
 
+    [Fact]
+    public void When_NoPlayerAdded_IsPlayeble_ReturnsFalse()
+    {
+        var sut = CreateSut();
+        var result = sut.IsPlayable();
+        Assert.False(result);
+    }
+
     public Game CreateSut()
     {
         return new Game();
