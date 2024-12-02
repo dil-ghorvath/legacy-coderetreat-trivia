@@ -2,3 +2,12 @@
 # in a .gitignore file inside the root folder
 # of that language. See Scala/.gitignore for
 # an example. Thanks.
+/.vs/legacy-coderetreat-trivia-sajat/FileContentIndex/b1987385-b9fc-4ea0-891e-ad5556be4862.vsidx
+/.vs/legacy-coderetreat-trivia-sajat/v17/.wsuo
+/.vs/legacy-coderetreat-trivia-sajat/v17/LTSC 17.8/Browse.VC.db
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/C#/Trivia/Tests/ApprovalTests.ApprovalTest.approved.txt
+/C#/Trivia/Tests/ApprovalTests.ApprovalTest.received.txt
+/C#/Trivia/Tests/ApprovalTests.ApprovalTest.verified.txt

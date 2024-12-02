@@ -5,4 +5,8 @@
     <TargetFramework>net6</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Verify.XunitV3" Version="28.4.0" />
+  </ItemGroup>
+
 </Project>
