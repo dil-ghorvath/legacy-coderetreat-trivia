@@ -107,6 +107,19 @@ public class GameTests
         Assert.Contains("Chet's new location is 3", output.ToString());
     }
 
+    [Fact]
+    public void When_Player_AnwsersWrong_Should_GoToPenaltyBox()
+    { 
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+        sut.Add("Chet");
+
+        sut.WrongAnswer();
+
+        Assert.Contains("Chet was sent to the penalty box", output.ToString());
+    }
+
     public Game CreateSut()
     {
         return new Game();
