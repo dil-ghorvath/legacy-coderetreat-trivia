@@ -142,6 +142,19 @@ public class GameTests
         Assert.Contains("Chet now has 1 Gold Coins.", output.ToString());
     }
 
+    [Fact]
+    public void When_PlayerRolls_Question_Should_BeAsked()
+    {
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+        sut.Add("Chet");
+
+        sut.Roll(1);
+
+        Assert.Contains("Science Question 0", output.ToString());
+    }
+
     public Game CreateSut()
     {
         return new Game();
