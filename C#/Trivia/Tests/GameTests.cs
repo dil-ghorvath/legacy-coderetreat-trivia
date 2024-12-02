@@ -64,6 +64,19 @@ public class GameTests
         Assert.True(playerOneWon);
     }
 
+    [Fact]
+    public void When_PlayerRolls_Should_MovePlaces()
+    {
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+        sut.Add("Chet");
+
+        sut.Roll(5);
+
+        Assert.Contains("Chet's new location is 5", output.ToString());
+    }
+
 
     public Game CreateSut()
     {
