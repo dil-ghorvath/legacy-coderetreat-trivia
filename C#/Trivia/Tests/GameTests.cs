@@ -47,6 +47,23 @@ public class GameTests
         Assert.Equal(sut.HowManyPlayers(), 2);
     }
 
+    [Fact]
+    public void When_FirstPlayerAnswersSixTimesCorrectly_ShouldWin()
+    {
+        var sut = CreateSut();
+        sut.Add("Chet");
+        sut.Add("Pat");
+        var playerOneWon = false;
+        for (int i = 0; i < 7; i++)
+        {
+            sut.Roll(1);
+            playerOneWon = sut.WasCorrectlyAnswered();
+            sut.WrongAnswer();
+        }
+
+        Assert.True(playerOneWon);
+    }
+
 
     public Game CreateSut()
     {
