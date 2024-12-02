@@ -9,11 +9,11 @@ namespace Tests;
 
 public class ApprovalTests
 {
+    public StringWriter output;
+
     [Fact]
     public Task ApprovalTest()
     {
-        var output = new StringWriter();
-        Console.SetOut(output);
         var sut = CreateSut();
 
         var rockQuestion = sut.CreateRockQuestion(1);
@@ -24,8 +24,6 @@ public class ApprovalTests
     [Fact]
     public Task AddPlayersApproval()
     {
-        var output = new StringWriter();
-        Console.SetOut(output);
         var sut = CreateSut();
 
         sut.Add("Chet");
@@ -36,8 +34,6 @@ public class ApprovalTests
     [Fact]
     public Task AddTwoPlayersApproval()
     {
-        var output = new StringWriter();
-        Console.SetOut(output);
         var sut = CreateSut();
 
         sut.Add("Chet");
@@ -49,11 +45,9 @@ public class ApprovalTests
     [Fact]
     public Task AddSevenPlayersApproval()
     {
-        var output = new StringWriter();
-        Console.SetOut(output);
         var sut = CreateSut();
 
-        for (int i = 0; i < 7; i++)
+        for (var i = 0; i < 7; i++)
         {
             sut.Add("Player" + i);
         }
@@ -64,8 +58,6 @@ public class ApprovalTests
     [Fact]
     public Task RollApproval()
     {
-        var output = new StringWriter();
-        Console.SetOut(output);
         var sut = CreateSut();
 
         sut.Add("Chet");
@@ -77,8 +69,6 @@ public class ApprovalTests
     [Fact]
     public Task WasCorrectlyAnwseredApproval()
     {
-        var output = new StringWriter();
-        Console.SetOut(output);
         var sut = CreateSut();
 
         sut.Add("Chet");
@@ -90,8 +80,6 @@ public class ApprovalTests
     [Fact]
     public Task WrongAnswerApproval()
     {
-        var output = new StringWriter();
-        Console.SetOut(output);
         var sut = CreateSut();
 
         sut.Add("Chet");
@@ -103,8 +91,6 @@ public class ApprovalTests
     [Fact]
     public Task IsInPenaltyBoxApproval()
     {
-        var output = new StringWriter();
-        Console.SetOut(output);
         var sut = CreateSut();
 
         sut.Add("Chet");
@@ -116,6 +102,8 @@ public class ApprovalTests
 
     public Game CreateSut()
     {
+        output = new StringWriter();
+        Console.SetOut(output);
         return new Game();
     }
 }

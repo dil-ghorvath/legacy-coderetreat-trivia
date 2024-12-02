@@ -1,13 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\ghorvath\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_a5f694b9\CoverageData\_Trivia.-440218429\Snapshot\snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=67911456_002Dc7fb_002D49d3_002Da914_002D63fd8580b4f6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="When_PlayerIsAdded_Console_Message_Should_Appear" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.ApprovalTest&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.AddPlayersApproval&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.AddTwoPlayersApproval&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.AddSevenPlayersApproval&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.RollApproval&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.WasCorrectlyAnwseredApproval&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.WrongAnswerApproval&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.IsInPenaltyBoxApproval&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.GameUnitTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
