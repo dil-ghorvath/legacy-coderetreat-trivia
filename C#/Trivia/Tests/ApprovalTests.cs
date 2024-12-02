@@ -74,6 +74,46 @@ public class ApprovalTests
         return VerifyXunit.Verifier.Verify(output.ToString());
     }
 
+    [Fact]
+    public Task WasCorrectlyAnwseredApproval()
+    {
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+
+        sut.Add("Chet");
+        sut.WasCorrectlyAnswered();
+
+        return VerifyXunit.Verifier.Verify(output.ToString());
+    }
+
+    [Fact]
+    public Task WrongAnswerApproval()
+    {
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+
+        sut.Add("Chet");
+        sut.WrongAnswer();
+
+        return VerifyXunit.Verifier.Verify(output.ToString());
+    }
+
+    [Fact]
+    public Task IsInPenaltyBoxApproval()
+    {
+        var output = new StringWriter();
+        Console.SetOut(output);
+        var sut = CreateSut();
+
+        sut.Add("Chet");
+        sut.WrongAnswer();
+        sut.Roll(2);
+
+        return VerifyXunit.Verifier.Verify(output.ToString());
+    }
+
     public Game CreateSut()
     {
         return new Game();

@@ -6,5 +6,8 @@
     &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.AddTwoPlayersApproval&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.AddSevenPlayersApproval&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.RollApproval&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.WasCorrectlyAnwseredApproval&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.WrongAnswerApproval&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7304DA09-262C-40EE-BC81-2B75746BD20E::net6.0::Tests.ApprovalTests.IsInPenaltyBoxApproval&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
