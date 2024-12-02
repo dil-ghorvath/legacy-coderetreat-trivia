@@ -37,6 +37,17 @@ public class GameTests
         Assert.True(sut.IsPlayable());
     }
 
+    [Fact]
+    public void When_TwoPlayersAdded_HowManyPlayers_Should_ReturnTwo()
+    {
+        var sut = CreateSut();
+        sut.Add("Chet");
+        sut.Add("Pat");
+
+        Assert.Equal(sut.HowManyPlayers(), 2);
+    }
+
+
     public Game CreateSut()
     {
         return new Game();
